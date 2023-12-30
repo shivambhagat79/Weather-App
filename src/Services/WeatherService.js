@@ -53,7 +53,7 @@ const formatforecastweather = (data) => {
   hourly = hourly.slice(1, 6).map((d) => {
     return {
       title: formattolocaltime(d.dt, timezone, "ccc"),
-      temp: d.temp.day,
+      temp: d.temp,
       icon: d.weather[0].icon,
     };
   });
