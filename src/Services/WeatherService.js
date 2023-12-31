@@ -1,7 +1,6 @@
 import { DateTime } from "luxon";
 
 const API_KEY = "1a50534d32a320b910036b4555c1f28f";
-const BASE_URL = "https://api.openweathermap.org/data/3.0/";
 
 const getWeatherData = (infoType, searchParams) => {
   const url = new URL(infoType);
@@ -37,6 +36,8 @@ const formatCurrentWeather = (data) => {
     sunset,
     weather,
     speed,
+    details,
+    icon,
   };
 };
 
