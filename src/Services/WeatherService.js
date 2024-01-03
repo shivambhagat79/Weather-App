@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 
-const API_KEY = "1a50534d32a320b910036b4555c1f28f";
+const API_KEY = //"Insert your API key";
 
 const getWeatherData = (infoType, searchParams) => {
   const url = new URL(infoType);
